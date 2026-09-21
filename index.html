@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>alluv — specialist LLM hosting</title>
+<meta name="description" content="alluv hosts open-weight large language models on dedicated GPUs. Private, predictable, and honestly specified. Pre-launch preview.">
+<!--
+  PRE-LAUNCH PREVIEW.
+  Pages are intentionally kept out of search indexes until the production domain
+  is chosen. At launch: set content="index,follow" below, replace the canonical
+  URL, add CNAME and update robots.txt / sitemap.xml.
+-->
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://dl4rce.github.io/alluv-website/">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="alluv — specialist LLM hosting">
+<meta property="og:description" content="Open-weight large language models on dedicated GPUs. Private, predictable, honestly specified.">
+<meta property="og:url" content="https://dl4rce.github.io/alluv-website/">
+<meta property="og:image" content="https://dl4rce.github.io/alluv-website/assets/alluv-logo.jpg">
+
+<link rel="icon" href="assets/alluv-logo.jpg" type="image/jpeg">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#top">
+      <img class="brand-mark" src="assets/alluv-logo.jpg" alt="" width="48" height="48" decoding="async">
+      <span class="brand-text">
+        <span class="brand-name">alluv</span>
+        <span class="brand-tag">specialist LLM hosting</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#hosting">Hosting</a>
+      <a href="#specification">Specification</a>
+      <a href="#status">Status</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="shell">
+      <p class="pill">Pre-launch preview</p>
+      <h1>Open-weight models,<br>on hardware you can point at.</h1>
+      <p class="lead">
+        alluv is a specialist host for open-weight large language models. Dedicated GPU
+        capacity, isolated lanes, and published measurements instead of marketing curves.
+      </p>
+      <p class="cta-row">
+        <a class="button" href="#status">Read the current status</a>
+        <a class="button button-quiet" href="#hosting">What is hosted</a>
+      </p>
+      <img class="hero-mark" src="assets/alluv-logo.jpg" alt="alluv logo — a six-petal mark in pastel blue, green, violet, yellow, pink and orange above the wordmark alluv" width="1024" height="1024" decoding="async">
+    </div>
+  </section>
+
+  <section class="band" id="hosting">
+    <div class="shell">
+      <h2>What alluv hosts</h2>
+      <p class="section-intro">
+        A narrow, deliberate catalogue. Specialisation is the product: fewer models,
+        known behaviour, no surprise rate limits.
+      </p>
+      <ul class="cards">
+        <li class="card">
+          <h3>Open-weight models</h3>
+          <p>
+            Instruction-tuned open-weight models in the 30-billion-parameter class, served
+            with a current inference server and an OpenAI-compatible API surface.
+          </p>
+        </li>
+        <li class="card">
+          <h3>Dedicated GPU lanes</h3>
+          <p>
+            Each lane is a booked slice of specific GPUs, not a shared pool. Bounded
+            concurrency with honest queueing is preferred over silent oversubscription.
+          </p>
+        </li>
+        <li class="card">
+          <h3>Data residency</h3>
+          <p>
+            Hosted in Europe. Prompts and completions are not used to train models and are
+            not handed to third-party inference providers.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-alt" id="specification">
+    <div class="shell">
+      <h2>What a lane will be specified by</h2>
+      <p class="section-intro">
+        Nothing on this page is a benchmark result. When numbers appear here, each one will
+        come from a recorded measurement run on the exact hardware and configuration offered.
+      </p>
+      <ul class="spec-list">
+        <li>Output tokens per second and prompt tokens per second, reported separately</li>
+        <li>Time to first token and time per output token, including per-user lower percentiles</li>
+        <li>Aggregate throughput at stated concurrency, not a single-stream headline</li>
+        <li>Board power and whole-server wall power, with joules per output token</li>
+        <li>Queue behaviour and overflow handling once a lane is saturated</li>
+        <li>Context length and KV-cache capacity for the exact served build</li>
+      </ul>
+      <p class="note">
+        Figures are published only after the measurement passes review. Until then this
+        section stays descriptive — deliberately.
+      </p>
+    </div>
+  </section>
+
+  <section class="band" id="status">
+    <div class="shell">
+      <h2>Status</h2>
+      <dl class="status-list">
+        <dt>Availability</dt>
+        <dd>Pre-launch. No general availability, no accepting self-service signups.</dd>
+        <dt>Pricing</dt>
+        <dd>Not published yet. Reserved plans are being validated against measured concurrency first.</dd>
+        <dt>Measurements</dt>
+        <dd>Benchmark campaigns on candidate hardware are running; results are not yet released.</dd>
+        <dt>Domain</dt>
+        <dd>Not yet chosen. This site currently runs on its repository preview address.</dd>
+        <dt>Legal notice</dt>
+        <dd>Imprint and privacy statement are published with the production domain, before launch.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band band-alt" id="contact">
+    <div class="shell">
+      <h2>Contact</h2>
+      <p>
+        Contact details are published together with the production domain. If you already
+        work with us, use the address you have.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p class="footer-brand">alluv — specialist LLM hosting</p>
+    <p class="footer-note">
+      Preview build. Imprint, privacy statement, pricing and contact details follow before launch.
+      Source for this page: <a href="https://github.com/dl4rce/alluv-website">dl4rce/alluv-website</a>.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
