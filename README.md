@@ -54,10 +54,17 @@ that alluv is a project name of that company. Verified values:
 - Contact: info@4rce.com
 
 The house number in the address is correct as stated. Two sibling sites —
-`stillpoint-website` (`imprint.html`) and the Flaiwheel landing page — carry
-`Grafentraubach 9`, which is **wrong** and should be corrected. The value here matches the
-commercial register entry, the live 4rce.com legal notice, the aicollab.app data processing
-agreement and the arcadeerrors.com imprint.
+`stillpoint-website` (`imprint.html`) and the Flaiwheel landing page — carried
+`Grafentraubach 9`, which was **wrong**. Both were corrected and published on
+2026-09-21: stillpoint-website in `eb91b30`, flaiwheel-website in `45b211d`
+(the landing page carried the address twice, in the visible imprint and in the
+`Organization` structured data). The value here matches the commercial register entry,
+the live 4rce.com legal notice, the aicollab.app data processing agreement and the
+arcadeerrors.com imprint.
+
+Note that the sibling imprints still cite § 5 TMG, which was superseded by § 5 DDG on
+14 May 2024. That is a separate legal-text question and was deliberately left untouched
+when only the address was authorised for correction.
 
 Two open items for the legal pages:
 
