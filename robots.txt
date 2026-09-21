@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
 
-# Preview address until the production domain is chosen.
-# Update this line together with CNAME, the canonical URL in index.html and robots meta.
-Sitemap: https://dl4rce.github.io/alluv-website/sitemap.xml
+Sitemap: https://alluv.ai/sitemap.xml
